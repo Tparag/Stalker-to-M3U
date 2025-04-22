@@ -1,1 +1,2 @@
-
+RewriteEngine On
+RewriteRule ^data(/|$) - [R=403,L]
