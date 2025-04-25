@@ -1,7 +1,7 @@
 <?php
 $currentUrl = ((isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on') ? "https" : "http") . "://" . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
 $scriptName = basename($_SERVER['SCRIPT_NAME']);
-$indexUrl = str_replace($scriptName, "index.php", $currentUrl);
+$indexUrl = str_replace($scriptName, "", $currentUrl);
 
 session_start();
 if (isset($_SESSION['user'])) {
