@@ -16,8 +16,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $username = $_POST['username'];
     $password = $_POST['password'];
 
-    $valid_username = "parag";
-    $valid_password = "parag@123";
+    $valid_username = "stalker";
+    $valid_password = "stalker@123";
 
     if ($username === $valid_username && $password === $valid_password) {
         $_SESSION['user'] = $username;
