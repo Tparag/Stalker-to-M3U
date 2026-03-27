@@ -1,1 +1,5 @@
-
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteRule ^playlist\.m3u$ playlist.php [L,QSA]
+    RewriteRule ^live\.(m3u8|ts|key)$ live.php [L,QSA]
+</IfModule>
